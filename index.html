@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LogicFastWeb - Página Web</title>
+    <title>Logic Fast - Transporte Escolar e Institucional</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <div id="app">
@@ -12,13 +14,23 @@
       <header class="header">
         <nav class="nav">
           <div class="nav-brand">
-            <h1>  ༄ Compania de Transportes</h1>
+            <div class="logo-container">
+              <i class="fas fa-bus"></i>
+              <h1>Logic Fast</h1>
+            </div>
+            <p class="tagline">Transporte Escolar e Institucional</p>
           </div>
           <ul class="nav-menu">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#empresas">Empresas</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
+          <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </nav>
       </header>
 
@@ -26,87 +38,396 @@
       <main class="main">
         <!-- Hero -->
         <section id="inicio" class="hero">
+          <div class="hero-background">
+            <div class="hero-overlay"></div>
+          </div>
           <div class="hero-content">
-
-            <!-- Imágenes circulares -->
+            <!-- Imágenes circulares con animación -->
             <div class="hero-images">
-              <img src="img/educacioncontinua.jpeg" alt="Imagen 1">
-              <img src="img/ampiro1.jpeg" alt="Imagen 2">
-              <img src="img/transpurgo.jpeg" alt="Imagen 3">
+              <div class="image-container">
+                <img src="img/educacioncontinua.jpeg" alt="Educación Continua">
+                <div class="image-overlay">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+              </div>
+              <div class="image-container">
+                <img src="img/ampiro1.jpeg" alt="Amipro Transporte">
+                <div class="image-overlay">
+                  <i class="fas fa-bus"></i>
+                </div>
+              </div>
+              <div class="image-container">
+                <img src="img/transpurgo.jpeg" alt="Transpurgo">
+                <div class="image-overlay">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+              </div>
             </div>
 
-            <h2>Servicios de Transporte Escolar e Institucional</h2>
-            <p>Brindamos servicios de calidad superior, enfocados en la seguridady la satisfacción del cliente.</p>
-            <button class="btn btn-primary">Comenzar</button>
+            <h2 class="hero-title">
+              <span class="title-line">Transporte Escolar</span>
+              <span class="title-line">e Institucional</span>
+            </h2>
+            <p class="hero-description">
+              Más de <strong>13 años de experiencia</strong> brindando servicios de transporte seguro, 
+              puntual y con tecnología de vanguardia. Priorizamos la seguridad y satisfacción 
+              de nuestros usuarios.
+            </p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary">
+                <i class="fas fa-phone"></i>
+                ¡Contrata tu Transporte!
+              </button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-info-circle"></i>
+                Conoce Más
+              </button>
+            </div>
+          </div>
+          
+          <!-- Elementos flotantes decorativos -->
+          <div class="floating-elements">
+            <div class="floating-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="floating-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="floating-icon"><i class="fas fa-clock"></i></div>
+            <div class="floating-icon"><i class="fas fa-users"></i></div>
           </div>
         </section>
 
         <!-- Servicios -->
         <section id="servicios" class="services">
-  <div class="container">
-    <h2>Nuestros Servicios</h2>
-    <div class="services-grid">
-      
-      <div class="service-card">
-        <img src="imagenes/desarrollo-web.png" alt="Desarrollo Web" class="service-icon">
-        <h3>Desarrollo Web</h3>
-        <p>Creamos sitios web modernos y responsivos con las últimas tecnologías.</p>
-      </div>
+          <div class="container">
+            <div class="section-header">
+              <h2>Nuestros Servicios</h2>
+              <p>Soluciones integrales para el transporte escolar e institucional</p>
+            </div>
+            
+            <div class="services-grid">
+              <!-- Servicio 1: Seguridad Integral -->
+              <div class="service-card" data-service="seguridad">
+                <div class="service-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>🚨 Seguridad Integral y Control de Calidad</h3>
+                <p>Priorizamos la seguridad con un protocolo de múltiples capas. Todas las unidades pasan por <strong>revisiones técnicas vehiculares periódicas</strong>, <strong>mantenimientos preventivos</strong> y un <strong>estricto proceso recurrente de termofumigación</strong> que elimina el 99% de virus y bacterias.</p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check"></i> Tests psicológicos a conductores</li>
+                  <li><i class="fas fa-check"></i> Cámaras de seguridad a bordo</li>
+                  <li><i class="fas fa-check"></i> Termofumigación periódica</li>
+                  <li><i class="fas fa-check"></i> Revisiones técnicas constantes</li>
+                </ul>
+              </div>
 
-      <div class="service-card">
-        <img src="imagenes/diseno-uiux.png" alt="Diseño UI/UX" class="service-icon">
-        <h3>Diseño UI/UX</h3>
-        <p>Diseños intuitivos y atractivos que mejoran la experiencia del usuario.</p>
-      </div>
+              <!-- Servicio 2: Geolocalización -->
+              <div class="service-card" data-service="geolocalizacion">
+                <div class="service-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>📍 Geolocalización en Tiempo Real (GeoPlanet)</h3>
+                <p>Utilizamos nuestra aplicación <strong>GeoPlanet</strong> para ofrecer un monitoreo en tiempo real. Padres, autoridades y docentes pueden conocer la <strong>ubicación exacta del vehículo</strong> en todo momento.</p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check"></i> Monitoreo en tiempo real</li>
+                  <li><i class="fas fa-check"></i> Alertas de inicio de ruta</li>
+                  <li><i class="fas fa-check"></i> Optimización de rutas</li>
+                  <li><i class="fas fa-check"></i> Notificaciones automáticas</li>
+                </ul>
+              </div>
 
-      <div class="service-card">
-        <img src="imagenes/optimizacion.png" alt="Optimización Web" class="service-icon">
-        <h3>Optimización</h3>
-        <p>Mejoramos el rendimiento y la velocidad de tu sitio web.</p>
-      </div>
+              <!-- Servicio 3: Oficina Virtual -->
+              <div class="service-card" data-service="oficina">
+                <div class="service-icon">
+                  <i class="fas fa-laptop"></i>
+                </div>
+                <h3>💬 Oficina Virtual y Soporte Multidisciplinario</h3>
+                <p>Conectamos a todos los actores en una sola plataforma. Ofrecemos atención prioritaria e inmediata para <strong>padres de familia</strong>, <strong>apoyo a colegios</strong> y <strong>respaldo a conductores</strong>.</p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check"></i> Atención prioritaria 24/7</li>
+                  <li><i class="fas fa-check"></i> Soporte por videollamada</li>
+                  <li><i class="fas fa-check"></i> Reportes en tiempo real</li>
+                  <li><i class="fas fa-check"></i> Comunicación integrada</li>
+                </ul>
+              </div>
 
-    </div>
-  </div>
-</section>
+              <!-- Servicio 4: Facturación Electrónica -->
+              <div class="service-card" data-service="facturacion">
+                <div class="service-icon">
+                  <i class="fas fa-file-invoice"></i>
+                </div>
+                <h3>🧾 Sistema de Facturación Electrónica Especializado</h3>
+                <p>Logic Fast proporciona un <strong>sistema de facturación electrónica</strong> especializado en el sector transporte. Es una solución contable <strong>completa, moderna y adaptable</strong>.</p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check"></i> Facturación electrónica</li>
+                  <li><i class="fas fa-check"></i> Firma digital</li>
+                  <li><i class="fas fa-check"></i> Software contable moderno</li>
+                  <li><i class="fas fa-check"></i> Procesos optimizados</li>
+                </ul>
+              </div>
 
+              <!-- Servicio 5: Transporte Escolar -->
+              <div class="service-card" data-service="transporte">
+                <div class="service-icon">
+                  <i class="fas fa-bus"></i>
+                </div>
+                <h3>🚌 Transporte Escolar e Institucional de Flota Moderna</h3>
+                <p>Nuestras empresas ofrecen un servicio <strong>seguro y puntual</strong> con más de <strong>13 años de experiencia</strong>. Contamos con <strong>unidades modernas (modelos 2015 en adelante)</strong>.</p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check"></i> Flota moderna (2015+)</li>
+                  <li><i class="fas fa-check"></i> Rutas personalizadas</li>
+                  <li><i class="fas fa-check"></i> 13+ años de experiencia</li>
+                  <li><i class="fas fa-check"></i> Adaptabilidad especial</li>
+                </ul>
+              </div>
+
+              <!-- Servicio 6: Tecnología Avanzada -->
+              <div class="service-card" data-service="tecnologia">
+                <div class="service-icon">
+                  <i class="fas fa-microchip"></i>
+                </div>
+                <h3>🔧 Tecnología de Vanguardia</h3>
+                <p>Implementamos las últimas tecnologías para garantizar la mejor experiencia en transporte escolar e institucional.</p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check"></i> Sistemas de monitoreo GPS</li>
+                  <li><i class="fas fa-check"></i> Aplicaciones móviles</li>
+                  <li><i class="fas fa-check"></i> Plataformas digitales</li>
+                  <li><i class="fas fa-check"></i> Integración tecnológica</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Empresas del Grupo -->
+        <section id="empresas" class="companies">
+          <div class="container">
+            <div class="section-header">
+              <h2>Empresas del Grupo</h2>
+              <p>Un ecosistema completo de transporte especializado</p>
+            </div>
+            
+            <div class="companies-grid">
+              <div class="company-card main-company">
+                <div class="company-logo">
+                  <i class="fas fa-microchip"></i>
+                </div>
+                <h3>Logic Fast</h3>
+                <p class="company-role">Empresa Tecnológica Líder</p>
+                <p>Provee la tecnología: geolocalización (GeoPlanet), facturación electrónica, oficina virtual y sistemas de seguridad.</p>
+                <div class="company-features">
+                  <span class="feature-tag">Tecnología</span>
+                  <span class="feature-tag">Innovación</span>
+                  <span class="feature-tag">Desarrollo</span>
+                </div>
+              </div>
+
+              <div class="company-card">
+                <div class="company-logo">
+                  <i class="fas fa-bus"></i>
+                </div>
+                <h3>Amipro</h3>
+                <p class="company-role">Transporte Escolar e Institucional</p>
+                <p>Especializada en servicios de transporte escolar con más de 13 años de experiencia.</p>
+              </div>
+
+              <div class="company-card">
+                <div class="company-logo">
+                  <i class="fas fa-bus"></i>
+                </div>
+                <h3>Furgocomnaz</h3>
+                <p class="company-role">Transporte Escolar e Institucional</p>
+                <p>Compañía de transporte escolar e institucional con flota moderna y rutas optimizadas.</p>
+              </div>
+
+              <div class="company-card">
+                <div class="company-logo">
+                  <i class="fas fa-bus"></i>
+                </div>
+                <h3>Empresco</h3>
+                <p class="company-role">Transporte Escolar e Institucional</p>
+                <p>Servicios de transporte especializado para instituciones educativas y empresas.</p>
+              </div>
+
+              <div class="company-card">
+                <div class="company-logo">
+                  <i class="fas fa-building"></i>
+                </div>
+                <h3>Catatrans</h3>
+                <p class="company-role">Parte del Grupo Empresarial</p>
+                <p>Integrada al ecosistema empresarial del grupo Logic Fast.</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- Contacto -->
         <section id="contacto" class="contact">
           <div class="container">
-            <h2>Contacto</h2>
+            <div class="section-header">
+              <h2>Contacto</h2>
+              <p>¿Necesitas transporte escolar o institucional? ¡Contáctanos!</p>
+            </div>
+            
             <div class="contact-content">
               <div class="contact-info">
-                <h3>¿Tienes un proyecto en mente?</h3>
-                <p>Estamos aquí para ayudarte a hacer realidad tus ideas web.</p>
-                <div class="contact-details">
-                  <p>📧 info@logicfastweb.com</p>
-                  <p>📱 +1 (555) 123-4567</p>
+                <div class="contact-card">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <h3>Líneas de Atención</h3>
+                  <p>+57 (1) 234-5678</p>
+                  <p>+57 300 123-4567</p>
+                </div>
+                
+                <div class="contact-card">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <h3>Correo Electrónico</h3>
+                  <p>info@logicfast.com</p>
+                  <p>soporte@logicfast.com</p>
+                </div>
+                
+                <div class="contact-card">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <h3>Ubicación</h3>
+                  <p>Bogotá, Colombia</p>
+                  <p>Oficina Principal</p>
                 </div>
               </div>
+              
               <form class="contact-form">
-                <input type="text" placeholder="Tu nombre" required>
-                <input type="email" placeholder="Tu email" required>
-                <textarea placeholder="Tu mensaje" rows="5" required></textarea>
-                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                <div class="form-group">
+                  <input type="text" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" placeholder="Tu número de teléfono" required>
+                </div>
+                <div class="form-group">
+                  <select required>
+                    <option value="">Selecciona el tipo de servicio</option>
+                    <option value="escolar">Transporte Escolar</option>
+                    <option value="institucional">Transporte Institucional</option>
+                    <option value="empresarial">Transporte Empresarial</option>
+                    <option value="consulta">Consulta General</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea placeholder="Cuéntanos sobre tus necesidades de transporte" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i>
+                  Enviar Solicitud
+                </button>
               </form>
             </div>
           </div>
         </section>
       </main>
-      <!-- Iconos de redes -->
-  <div class="iconos-redes">
-    
-    <a href="" target="_blank">
-      <img src="img/logogmail.jpeg" alt="Gmail">
-    </a>
-  </div>
 
       <!-- Footer -->
       <footer class="footer">
         <div class="container">
-          <p>&copy; 2024 LogicFastWeb. Todos los derechos reservados.</p>
+          <div class="footer-content">
+            <div class="footer-section">
+              <div class="footer-logo">
+                <i class="fas fa-bus"></i>
+                <h3>Logic Fast</h3>
+              </div>
+              <p>Transporte escolar e institucional con tecnología de vanguardia y más de 13 años de experiencia.</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+            
+            <div class="footer-section">
+              <h4>Servicios</h4>
+              <ul>
+                <li><a href="#servicios">Transporte Escolar</a></li>
+                <li><a href="#servicios">Transporte Institucional</a></li>
+                <li><a href="#servicios">Geolocalización</a></li>
+                <li><a href="#servicios">Facturación Electrónica</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <h4>Empresas</h4>
+              <ul>
+                <li><a href="#empresas">Logic Fast</a></li>
+                <li><a href="#empresas">Amipro</a></li>
+                <li><a href="#empresas">Furgocomnaz</a></li>
+                <li><a href="#empresas">Empresco</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <h4>Contacto</h4>
+              <ul>
+                <li><i class="fas fa-phone"></i> +57 (1) 234-5678</li>
+                <li><i class="fas fa-envelope"></i> info@logicfast.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <p>&copy; 2024 Logic Fast. Todos los derechos reservados.</p>
+            <p>Desarrollado con ❤️ para el transporte del futuro</p>
+          </div>
         </div>
       </footer>
     </div>
+
+    <script>
+      // Smooth scrolling para navegación
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Animaciones al hacer scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      }, observerOptions);
+
+      // Observar elementos para animaciones
+      document.querySelectorAll('.service-card, .company-card, .contact-card').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Toggle del menú móvil
+      const navToggle = document.querySelector('.nav-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+      
+      if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+          navToggle.classList.toggle('active');
+        });
+      }
+    </script>
   </body>
 </html>
